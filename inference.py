@@ -190,8 +190,7 @@ def sanitize_action_payload(payload: Dict) -> Dict:
 
 
 def run_local_episode(task_id: str, policy: str, model_name: str) -> Dict[str, float]:
-    print(f"START")
-    print(f"Task: {task_id}")
+    print(f"[START] task={task_id}", flush=True)
     env = VulnTriageEnvironment()
     observation = env.reset(task_id=task_id).model_dump()
     client = get_openai_client() if policy == "openai" else None
@@ -200,7 +199,6 @@ def run_local_episode(task_id: str, policy: str, model_name: str) -> Dict[str, f
     step_num: int = 1
 
     while not observation["done"]:
-        print(f"STEP")
         action_payload = (
             llm_policy(client, model_name, observation) if client else heuristic_policy(observation)
         )
@@ -209,7 +207,7 @@ def run_local_episode(task_id: str, policy: str, model_name: str) -> Dict[str, f
             clean = sanitize_action_payload(action_payload)
             action = VulnTriageAction.model_validate(clean)
         except Exception as exc:
-            print(f"  [warn] invalid action payload ({exc}), falling back to read_report")
+            print(f"  [warn] invalid action payload ({exc}), falling back to read_report", flush=True)
             action = VulnTriageAction(action_type="read_report", rationale="fallback: parse error")
 
         # Break infinite loops where model repeats the same action
@@ -217,17 +215,19 @@ def run_local_episode(task_id: str, policy: str, model_name: str) -> Dict[str, f
         if action_str == last_action_str:
             repeat_count += 1
             if repeat_count >= 3:
-                print(f"  [warn] model repeated same action 3x — forcing submit_triage")
+                print(f"  [warn] model repeated same action 3x — forcing submit_triage", flush=True)
                 action = VulnTriageAction(action_type="submit_triage", rationale="loop guard")
         else:
             repeat_count = 0
         last_action_str = action_str
 
-        print(f"Action: {action.action_type}")
         observation = env.step(action).model_dump()
+        step_reward = float(observation.get("reward") or 0.0)
+        print(f"[STEP] step={step_num} action={action.action_type} reward={step_reward}", flush=True)
         step_num += 1
 
-    print(f"END")
+    final_score = float(observation.get("final_score") or observation.get("score_breakdown", {}).get("total", 0.0))
+    print(f"[END] task={task_id} score={final_score} steps={step_num}", flush=True)
 
     return {
         "task_id": task_id,
@@ -248,8 +248,7 @@ def run_local_episode(task_id: str, policy: str, model_name: str) -> Dict[str, f
 
 
 def run_remote_episode(base_url: str, task_id: str, policy: str, model_name: str) -> Dict[str, float]:
-    print(f"START")
-    print(f"Task: {task_id}")
+    print(f"[START] task={task_id}", flush=True)
     llm_client = get_openai_client() if policy == "openai" else None
     env = GenericEnvClient(base_url=base_url).sync()
     with env:
@@ -258,19 +257,20 @@ def run_remote_episode(base_url: str, task_id: str, policy: str, model_name: str
         done = response.done
         step_num: int = 1
         while not done:
-            print(f"STEP")
             action_payload = (
                 llm_policy(llm_client, model_name, observation)
                 if llm_client
                 else heuristic_policy(observation)
             )
-            print(f"Action: {action_payload.get('action_type')}")
             response = env.step(action_payload)
             observation = response.observation
             done = response.done
+            step_reward = float(getattr(response, 'reward', None) or 0.0)
+            print(f"[STEP] step={step_num} action={action_payload.get('action_type')} reward={step_reward}", flush=True)
             step_num += 1
 
-    print(f"END")
+    final_score = float(observation.get("final_score") or observation.get("score_breakdown", {}).get("total", 0.0))
+    print(f"[END] task={task_id} score={final_score} steps={step_num}", flush=True)
 
     final_score = float(observation.get("final_score") or 0.0)
     return {
