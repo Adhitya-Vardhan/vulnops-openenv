@@ -12,7 +12,8 @@ from openenv.core import GenericEnvClient
 
 API_BASE_URL = os.getenv("API_BASE_URL", "https://api.openai.com/v1")
 MODEL_NAME = os.getenv("MODEL_NAME", "gpt-4o-mini")
-HF_TOKEN = os.getenv("HF_TOKEN")
+# Support all key variants the validator may inject
+_API_KEY = os.getenv("API_KEY") or os.getenv("HF_TOKEN") or os.getenv("OPENAI_API_KEY")
 
 from models import VulnTriageAction
 from server.cases import TASK_ORDER, get_case_definition
@@ -47,11 +48,12 @@ Note: You CANNOT inspect "nvd_assessment", "github_commit_diff", or "vendor_stat
 
 
 def get_openai_client() -> OpenAI:
-    api_key = HF_TOKEN or os.getenv("OPENAI_API_KEY")
+    api_key = _API_KEY
     if not api_key:
-        raise RuntimeError("Set HF_TOKEN before running the OpenAI baseline.")
-
-    kwargs = {"api_key": api_key}
+        raise RuntimeError(
+            "Set API_KEY, HF_TOKEN, or OPENAI_API_KEY before running the OpenAI baseline."
+        )
+    kwargs: Dict[str, str] = {"api_key": api_key}
     if API_BASE_URL:
         kwargs["base_url"] = API_BASE_URL
     return OpenAI(**kwargs)
@@ -293,9 +295,15 @@ def run_remote_episode(base_url: str, task_id: str, policy: str, model_name: str
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--policy", choices=["openai", "heuristic"], default="heuristic")
+    # Auto-select openai policy when the validator injects API credentials;
+    # fall back to heuristic for local smoke-tests with no key.
+    _has_credentials = bool(_API_KEY)
+    _default_policy = "openai" if _has_credentials else "heuristic"
+    parser.add_argument("--policy", choices=["openai", "heuristic"], default=_default_policy)
     parser.add_argument("--model", default=MODEL_NAME)
-    parser.add_argument("--env-base-url", dest="base_url", default=os.getenv("ENV_BASE_URL"))
+    # Default ENV_BASE_URL to the live HF Space so the validator can reach our environment
+    _default_env_url = os.getenv("ENV_BASE_URL", "https://adhitya122-vulnops.hf.space")
+    parser.add_argument("--env-base-url", dest="base_url", default=_default_env_url)
     args = parser.parse_args()
 
     results: List[Dict[str, float]] = []
