@@ -23,7 +23,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copy remaining files
-COPY models.py inference.py probe_env.py ./
+COPY models.py inference.py ./
 COPY server/ ./server/
 COPY data/ ./data/
 
