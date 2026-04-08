@@ -1,0 +1,52 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- Testing / CI ----
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- macOS ----
+.DS_Store
+*.DS_Store
+
+# ---- IDE / editors ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- Logs & artifacts ----
+logs/
+artifacts/
+*.log
+
+# ---- Planning & dev-only docs (not needed in submission) ----
+problem-statement.md
+project-ideas-final.md
+implementation-plan.md
+HANDOFF_NEXT_STEPS.md
+probe_env.py
+training_utils.py
+
+# ---- Local AI tooling ----
+.gemini/
+
+# ---- Data snapshots (large, runtime-fetched) ----
+data/snapshots/
+
+# ---- uv lock (builder uses it but not needed in git for HF) ----
+# Keep uv.lock — required for reproducible Docker builds

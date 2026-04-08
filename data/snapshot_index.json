@@ -1,0 +1,1205 @@
+{
+  "count": 200,
+  "snapshots": [
+    {
+      "osv_id": "PYSEC-2013-1",
+      "file": "data/snapshots/PYSEC-2013-1.json",
+      "cve_id": "CVE-2013-4259",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2013-2",
+      "file": "data/snapshots/PYSEC-2013-2.json",
+      "cve_id": "CVE-2013-4260",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2014-98",
+      "file": "data/snapshots/PYSEC-2014-98.json",
+      "cve_id": "CVE-2014-2260",
+      "package": "ajenti"
+    },
+    {
+      "osv_id": "PYSEC-2014-99",
+      "file": "data/snapshots/PYSEC-2014-99.json",
+      "cve_id": "CVE-2014-4301",
+      "package": "ajenti"
+    },
+    {
+      "osv_id": "PYSEC-2015-1",
+      "file": "data/snapshots/PYSEC-2015-1.json",
+      "cve_id": "CVE-2015-3908",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2016-1",
+      "file": "data/snapshots/PYSEC-2016-1.json",
+      "cve_id": "CVE-2016-3096",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2017-105",
+      "file": "data/snapshots/PYSEC-2017-105.json",
+      "cve_id": "CVE-2016-8752",
+      "package": "apache-atlas"
+    },
+    {
+      "osv_id": "PYSEC-2017-106",
+      "file": "data/snapshots/PYSEC-2017-106.json",
+      "cve_id": "CVE-2017-3150",
+      "package": "apache-atlas"
+    },
+    {
+      "osv_id": "PYSEC-2017-107",
+      "file": "data/snapshots/PYSEC-2017-107.json",
+      "cve_id": "CVE-2017-3151",
+      "package": "apache-atlas"
+    },
+    {
+      "osv_id": "PYSEC-2017-108",
+      "file": "data/snapshots/PYSEC-2017-108.json",
+      "cve_id": "CVE-2017-3152",
+      "package": "apache-atlas"
+    },
+    {
+      "osv_id": "PYSEC-2017-109",
+      "file": "data/snapshots/PYSEC-2017-109.json",
+      "cve_id": "CVE-2017-3153",
+      "package": "apache-atlas"
+    },
+    {
+      "osv_id": "PYSEC-2017-110",
+      "file": "data/snapshots/PYSEC-2017-110.json",
+      "cve_id": "CVE-2017-3154",
+      "package": "apache-atlas"
+    },
+    {
+      "osv_id": "PYSEC-2017-111",
+      "file": "data/snapshots/PYSEC-2017-111.json",
+      "cve_id": "CVE-2017-3155",
+      "package": "apache-atlas"
+    },
+    {
+      "osv_id": "PYSEC-2017-2",
+      "file": "data/snapshots/PYSEC-2017-2.json",
+      "cve_id": "CVE-2014-3498",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2017-3",
+      "file": "data/snapshots/PYSEC-2017-3.json",
+      "cve_id": "CVE-2015-6240",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2017-4",
+      "file": "data/snapshots/PYSEC-2017-4.json",
+      "cve_id": "CVE-2017-7550",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2017-5",
+      "file": "data/snapshots/PYSEC-2017-5.json",
+      "cve_id": "CVE-2017-2809",
+      "package": "ansible-vault"
+    },
+    {
+      "osv_id": "PYSEC-2018-107",
+      "file": "data/snapshots/PYSEC-2018-107.json",
+      "cve_id": "CVE-2018-18548",
+      "package": "ajenti"
+    },
+    {
+      "osv_id": "PYSEC-2018-109",
+      "file": "data/snapshots/PYSEC-2018-109.json",
+      "cve_id": "CVE-2018-1000080",
+      "package": "ajenti-panel"
+    },
+    {
+      "osv_id": "PYSEC-2018-110",
+      "file": "data/snapshots/PYSEC-2018-110.json",
+      "cve_id": "CVE-2018-1000081",
+      "package": "ajenti-panel"
+    },
+    {
+      "osv_id": "PYSEC-2018-111",
+      "file": "data/snapshots/PYSEC-2018-111.json",
+      "cve_id": "CVE-2018-1000082",
+      "package": "ajenti-panel"
+    },
+    {
+      "osv_id": "PYSEC-2018-112",
+      "file": "data/snapshots/PYSEC-2018-112.json",
+      "cve_id": "CVE-2018-1000083",
+      "package": "ajenti-panel"
+    },
+    {
+      "osv_id": "PYSEC-2018-113",
+      "file": "data/snapshots/PYSEC-2018-113.json",
+      "cve_id": "CVE-2018-1000126",
+      "package": "ajenti-panel"
+    },
+    {
+      "osv_id": "PYSEC-2018-35",
+      "file": "data/snapshots/PYSEC-2018-35.json",
+      "cve_id": "CVE-2018-1000814",
+      "package": "aiohttp-session"
+    },
+    {
+      "osv_id": "PYSEC-2018-36",
+      "file": "data/snapshots/PYSEC-2018-36.json",
+      "cve_id": "CVE-2013-2233",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2018-37",
+      "file": "data/snapshots/PYSEC-2018-37.json",
+      "cve_id": "CVE-2016-8614",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2018-38",
+      "file": "data/snapshots/PYSEC-2018-38.json",
+      "cve_id": "CVE-2016-8628",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2018-39",
+      "file": "data/snapshots/PYSEC-2018-39.json",
+      "cve_id": "CVE-2016-9587",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2018-40",
+      "file": "data/snapshots/PYSEC-2018-40.json",
+      "cve_id": "CVE-2017-7466",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2018-41",
+      "file": "data/snapshots/PYSEC-2018-41.json",
+      "cve_id": "CVE-2017-7481",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2018-42",
+      "file": "data/snapshots/PYSEC-2018-42.json",
+      "cve_id": "CVE-2018-10855",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2018-43",
+      "file": "data/snapshots/PYSEC-2018-43.json",
+      "cve_id": "CVE-2018-10875",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2018-44",
+      "file": "data/snapshots/PYSEC-2018-44.json",
+      "cve_id": "CVE-2018-16837",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2018-45",
+      "file": "data/snapshots/PYSEC-2018-45.json",
+      "cve_id": "CVE-2017-12614",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2018-58",
+      "file": "data/snapshots/PYSEC-2018-58.json",
+      "cve_id": "CVE-2016-8647",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2018-60",
+      "file": "data/snapshots/PYSEC-2018-60.json",
+      "cve_id": "CVE-2018-16859",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2018-80",
+      "file": "data/snapshots/PYSEC-2018-80.json",
+      "cve_id": "CVE-2018-1000519",
+      "package": "aiohttp-session"
+    },
+    {
+      "osv_id": "PYSEC-2018-81",
+      "file": "data/snapshots/PYSEC-2018-81.json",
+      "cve_id": "CVE-2018-10874",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2019-1",
+      "file": "data/snapshots/PYSEC-2019-1.json",
+      "cve_id": "CVE-2019-1000007",
+      "package": "aioxmpp"
+    },
+    {
+      "osv_id": "PYSEC-2019-141",
+      "file": "data/snapshots/PYSEC-2019-141.json",
+      "cve_id": "CVE-2018-16876",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2019-142",
+      "file": "data/snapshots/PYSEC-2019-142.json",
+      "cve_id": "CVE-2018-20244",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2019-143",
+      "file": "data/snapshots/PYSEC-2019-143.json",
+      "cve_id": "CVE-2018-20245",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2019-145",
+      "file": "data/snapshots/PYSEC-2019-145.json",
+      "cve_id": "CVE-2019-10206",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2019-146",
+      "file": "data/snapshots/PYSEC-2019-146.json",
+      "cve_id": "CVE-2019-14856",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2019-147",
+      "file": "data/snapshots/PYSEC-2019-147.json",
+      "cve_id": "CVE-2017-15720",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2019-148",
+      "file": "data/snapshots/PYSEC-2019-148.json",
+      "cve_id": "CVE-2017-17835",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2019-149",
+      "file": "data/snapshots/PYSEC-2019-149.json",
+      "cve_id": "CVE-2017-17836",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2019-171",
+      "file": "data/snapshots/PYSEC-2019-171.json",
+      "cve_id": "CVE-2019-14858",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2019-2",
+      "file": "data/snapshots/PYSEC-2019-2.json",
+      "cve_id": "CVE-2019-10156",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2019-214",
+      "file": "data/snapshots/PYSEC-2019-214.json",
+      "cve_id": "CVE-2019-0216",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2019-215",
+      "file": "data/snapshots/PYSEC-2019-215.json",
+      "cve_id": "CVE-2019-0229",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2019-216",
+      "file": "data/snapshots/PYSEC-2019-216.json",
+      "cve_id": "CVE-2019-12417",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2019-3",
+      "file": "data/snapshots/PYSEC-2019-3.json",
+      "cve_id": "CVE-2019-10217",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2019-4",
+      "file": "data/snapshots/PYSEC-2019-4.json",
+      "cve_id": "CVE-2019-14846",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2019-5",
+      "file": "data/snapshots/PYSEC-2019-5.json",
+      "cve_id": "CVE-2019-3828",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-1",
+      "file": "data/snapshots/PYSEC-2020-1.json",
+      "cve_id": "CVE-2020-10685",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-10",
+      "file": "data/snapshots/PYSEC-2020-10.json",
+      "cve_id": "CVE-2020-1738",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-11",
+      "file": "data/snapshots/PYSEC-2020-11.json",
+      "cve_id": "CVE-2020-1739",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-12",
+      "file": "data/snapshots/PYSEC-2020-12.json",
+      "cve_id": "CVE-2020-1740",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-13",
+      "file": "data/snapshots/PYSEC-2020-13.json",
+      "cve_id": "CVE-2020-1746",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-14",
+      "file": "data/snapshots/PYSEC-2020-14.json",
+      "cve_id": "CVE-2020-11978",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2020-15",
+      "file": "data/snapshots/PYSEC-2020-15.json",
+      "cve_id": "CVE-2020-11981",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2020-159",
+      "file": "data/snapshots/PYSEC-2020-159.json",
+      "cve_id": "CVE-2020-26214",
+      "package": "alerta-server"
+    },
+    {
+      "osv_id": "PYSEC-2020-16",
+      "file": "data/snapshots/PYSEC-2020-16.json",
+      "cve_id": "CVE-2020-11982",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2020-160",
+      "file": "data/snapshots/PYSEC-2020-160.json",
+      "cve_id": "CVE-2019-14864",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-161",
+      "file": "data/snapshots/PYSEC-2020-161.json",
+      "cve_id": "CVE-2019-14904",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-162",
+      "file": "data/snapshots/PYSEC-2020-162.json",
+      "cve_id": "CVE-2019-12398",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2020-17",
+      "file": "data/snapshots/PYSEC-2020-17.json",
+      "cve_id": "CVE-2020-11983",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2020-18",
+      "file": "data/snapshots/PYSEC-2020-18.json",
+      "cve_id": "CVE-2020-13927",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2020-19",
+      "file": "data/snapshots/PYSEC-2020-19.json",
+      "cve_id": "CVE-2020-13944",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2020-198",
+      "file": "data/snapshots/PYSEC-2020-198.json",
+      "cve_id": "CVE-2014-2686",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-199",
+      "file": "data/snapshots/PYSEC-2020-199.json",
+      "cve_id": "CVE-2014-4657",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-2",
+      "file": "data/snapshots/PYSEC-2020-2.json",
+      "cve_id": "CVE-2020-10691",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-20",
+      "file": "data/snapshots/PYSEC-2020-20.json",
+      "cve_id": "CVE-2020-17513",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2020-200",
+      "file": "data/snapshots/PYSEC-2020-200.json",
+      "cve_id": "CVE-2014-4658",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-201",
+      "file": "data/snapshots/PYSEC-2020-201.json",
+      "cve_id": "CVE-2014-4659",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-202",
+      "file": "data/snapshots/PYSEC-2020-202.json",
+      "cve_id": "CVE-2014-4660",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-203",
+      "file": "data/snapshots/PYSEC-2020-203.json",
+      "cve_id": "CVE-2014-4678",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-204",
+      "file": "data/snapshots/PYSEC-2020-204.json",
+      "cve_id": "CVE-2014-4966",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-205",
+      "file": "data/snapshots/PYSEC-2020-205.json",
+      "cve_id": "CVE-2014-4967",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-206",
+      "file": "data/snapshots/PYSEC-2020-206.json",
+      "cve_id": "CVE-2019-14905",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-207",
+      "file": "data/snapshots/PYSEC-2020-207.json",
+      "cve_id": "CVE-2020-10684",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-208",
+      "file": "data/snapshots/PYSEC-2020-208.json",
+      "cve_id": "CVE-2020-10744",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-209",
+      "file": "data/snapshots/PYSEC-2020-209.json",
+      "cve_id": "CVE-2020-14365",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-21",
+      "file": "data/snapshots/PYSEC-2020-21.json",
+      "cve_id": "CVE-2020-17515",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2020-210",
+      "file": "data/snapshots/PYSEC-2020-210.json",
+      "cve_id": "CVE-2020-1753",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-22",
+      "file": "data/snapshots/PYSEC-2020-22.json",
+      "cve_id": "CVE-2020-17526",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2020-220",
+      "file": "data/snapshots/PYSEC-2020-220.json",
+      "cve_id": "CVE-2020-25635",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-221",
+      "file": "data/snapshots/PYSEC-2020-221.json",
+      "cve_id": null,
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-23",
+      "file": "data/snapshots/PYSEC-2020-23.json",
+      "cve_id": "CVE-2020-9485",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2020-262",
+      "file": "data/snapshots/PYSEC-2020-262.json",
+      "cve_id": "CVE-2020-17511",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2020-3",
+      "file": "data/snapshots/PYSEC-2020-3.json",
+      "cve_id": "CVE-2020-14330",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-4",
+      "file": "data/snapshots/PYSEC-2020-4.json",
+      "cve_id": "CVE-2020-14332",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-5",
+      "file": "data/snapshots/PYSEC-2020-5.json",
+      "cve_id": "CVE-2020-1733",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-6",
+      "file": "data/snapshots/PYSEC-2020-6.json",
+      "cve_id": "CVE-2020-1734",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-7",
+      "file": "data/snapshots/PYSEC-2020-7.json",
+      "cve_id": "CVE-2020-1735",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-8",
+      "file": "data/snapshots/PYSEC-2020-8.json",
+      "cve_id": "CVE-2020-1736",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2020-9",
+      "file": "data/snapshots/PYSEC-2020-9.json",
+      "cve_id": "CVE-2020-1737",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2021-1",
+      "file": "data/snapshots/PYSEC-2021-1.json",
+      "cve_id": "CVE-2021-20228",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2021-105",
+      "file": "data/snapshots/PYSEC-2021-105.json",
+      "cve_id": "CVE-2020-10729",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2021-106",
+      "file": "data/snapshots/PYSEC-2021-106.json",
+      "cve_id": "CVE-2021-20178",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2021-107",
+      "file": "data/snapshots/PYSEC-2021-107.json",
+      "cve_id": "CVE-2021-3447",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2021-122",
+      "file": "data/snapshots/PYSEC-2021-122.json",
+      "cve_id": "CVE-2021-35936",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2021-124",
+      "file": "data/snapshots/PYSEC-2021-124.json",
+      "cve_id": "CVE-2021-20191",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2021-125",
+      "file": "data/snapshots/PYSEC-2021-125.json",
+      "cve_id": null,
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2021-126",
+      "file": "data/snapshots/PYSEC-2021-126.json",
+      "cve_id": "CVE-2021-3533",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2021-2",
+      "file": "data/snapshots/PYSEC-2021-2.json",
+      "cve_id": "CVE-2021-26559",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2021-3",
+      "file": "data/snapshots/PYSEC-2021-3.json",
+      "cve_id": "CVE-2021-26697",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2021-326",
+      "file": "data/snapshots/PYSEC-2021-326.json",
+      "cve_id": "CVE-2021-38540",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2021-335",
+      "file": "data/snapshots/PYSEC-2021-335.json",
+      "cve_id": "CVE-2021-32807",
+      "package": "accesscontrol"
+    },
+    {
+      "osv_id": "PYSEC-2021-358",
+      "file": "data/snapshots/PYSEC-2021-358.json",
+      "cve_id": "CVE-2021-3583",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2021-370",
+      "file": "data/snapshots/PYSEC-2021-370.json",
+      "cve_id": "CVE-2021-32807",
+      "package": "accesscontrol"
+    },
+    {
+      "osv_id": "PYSEC-2021-4",
+      "file": "data/snapshots/PYSEC-2021-4.json",
+      "cve_id": "CVE-2021-28359",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2021-76",
+      "file": "data/snapshots/PYSEC-2021-76.json",
+      "cve_id": "CVE-2021-21330",
+      "package": "aiohttp"
+    },
+    {
+      "osv_id": "PYSEC-2021-839",
+      "file": "data/snapshots/PYSEC-2021-839.json",
+      "cve_id": "CVE-2021-43775",
+      "package": "aim"
+    },
+    {
+      "osv_id": "PYSEC-2021-840",
+      "file": "data/snapshots/PYSEC-2021-840.json",
+      "cve_id": "CVE-2021-3840",
+      "package": "antilles-tools"
+    },
+    {
+      "osv_id": "PYSEC-2021-876",
+      "file": "data/snapshots/PYSEC-2021-876.json",
+      "cve_id": "CVE-2020-13922",
+      "package": "apache-dolphinscheduler"
+    },
+    {
+      "osv_id": "PYSEC-2022-11",
+      "file": "data/snapshots/PYSEC-2022-11.json",
+      "cve_id": "CVE-2021-45230",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-164",
+      "file": "data/snapshots/PYSEC-2022-164.json",
+      "cve_id": "CVE-2021-3620",
+      "package": "ansible"
+    },
+    {
+      "osv_id": "PYSEC-2022-176",
+      "file": "data/snapshots/PYSEC-2022-176.json",
+      "cve_id": "CVE-2022-25598",
+      "package": "apache-dolphinscheduler"
+    },
+    {
+      "osv_id": "PYSEC-2022-182",
+      "file": "data/snapshots/PYSEC-2022-182.json",
+      "cve_id": "CVE-2018-25033",
+      "package": "admesh"
+    },
+    {
+      "osv_id": "PYSEC-2022-253",
+      "file": "data/snapshots/PYSEC-2022-253.json",
+      "cve_id": "CVE-2021-4041",
+      "package": "ansible-runner"
+    },
+    {
+      "osv_id": "PYSEC-2022-261",
+      "file": "data/snapshots/PYSEC-2022-261.json",
+      "cve_id": "CVE-2022-38170",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-263",
+      "file": "data/snapshots/PYSEC-2022-263.json",
+      "cve_id": "CVE-2022-38054",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-279",
+      "file": "data/snapshots/PYSEC-2022-279.json",
+      "cve_id": "CVE-2022-40604",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-280",
+      "file": "data/snapshots/PYSEC-2022-280.json",
+      "cve_id": "CVE-2022-40754",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-29",
+      "file": "data/snapshots/PYSEC-2022-29.json",
+      "cve_id": "CVE-2021-45229",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-30",
+      "file": "data/snapshots/PYSEC-2022-30.json",
+      "cve_id": "CVE-2022-24288",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-42970",
+      "file": "data/snapshots/PYSEC-2022-42970.json",
+      "cve_id": "CVE-2022-43982",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-42971",
+      "file": "data/snapshots/PYSEC-2022-42971.json",
+      "cve_id": "CVE-2022-43985",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-42972",
+      "file": "data/snapshots/PYSEC-2022-42972.json",
+      "cve_id": "CVE-2022-43766",
+      "package": "apache-iotdb"
+    },
+    {
+      "osv_id": "PYSEC-2022-42981",
+      "file": "data/snapshots/PYSEC-2022-42981.json",
+      "cve_id": "CVE-2022-27949",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-42982",
+      "file": "data/snapshots/PYSEC-2022-42982.json",
+      "cve_id": "CVE-2022-40127",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-42983",
+      "file": "data/snapshots/PYSEC-2022-42983.json",
+      "cve_id": "CVE-2022-41672",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-42984",
+      "file": "data/snapshots/PYSEC-2022-42984.json",
+      "cve_id": "CVE-2022-45402",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2022-43059",
+      "file": "data/snapshots/PYSEC-2022-43059.json",
+      "cve_id": null,
+      "package": "aiohttp"
+    },
+    {
+      "osv_id": "PYSEC-2022-43060",
+      "file": "data/snapshots/PYSEC-2022-43060.json",
+      "cve_id": "CVE-2022-32531",
+      "package": "apache-bookkeeper-client"
+    },
+    {
+      "osv_id": "PYSEC-2022-43066",
+      "file": "data/snapshots/PYSEC-2022-43066.json",
+      "cve_id": null,
+      "package": "aamiles"
+    },
+    {
+      "osv_id": "PYSEC-2022-43067",
+      "file": "data/snapshots/PYSEC-2022-43067.json",
+      "cve_id": "CVE-2021-3701",
+      "package": "ansible-runner"
+    },
+    {
+      "osv_id": "PYSEC-2022-43068",
+      "file": "data/snapshots/PYSEC-2022-43068.json",
+      "cve_id": "CVE-2021-3702",
+      "package": "ansible-runner"
+    },
+    {
+      "osv_id": "PYSEC-2022-43069",
+      "file": "data/snapshots/PYSEC-2022-43069.json",
+      "cve_id": "CVE-2022-38369",
+      "package": "apache-iotdb"
+    },
+    {
+      "osv_id": "PYSEC-2022-43070",
+      "file": "data/snapshots/PYSEC-2022-43070.json",
+      "cve_id": null,
+      "package": "apache-iotdb"
+    },
+    {
+      "osv_id": "PYSEC-2023-1",
+      "file": "data/snapshots/PYSEC-2023-1.json",
+      "cve_id": null,
+      "package": "adyen"
+    },
+    {
+      "osv_id": "PYSEC-2023-103",
+      "file": "data/snapshots/PYSEC-2023-103.json",
+      "cve_id": "CVE-2022-46651",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-104",
+      "file": "data/snapshots/PYSEC-2023-104.json",
+      "cve_id": "CVE-2023-22887",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-105",
+      "file": "data/snapshots/PYSEC-2023-105.json",
+      "cve_id": "CVE-2023-22888",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-106",
+      "file": "data/snapshots/PYSEC-2023-106.json",
+      "cve_id": "CVE-2023-36543",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-119",
+      "file": "data/snapshots/PYSEC-2023-119.json",
+      "cve_id": "CVE-2023-35908",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-120",
+      "file": "data/snapshots/PYSEC-2023-120.json",
+      "cve_id": "CVE-2023-37276",
+      "package": "aiohttp"
+    },
+    {
+      "osv_id": "PYSEC-2023-134",
+      "file": "data/snapshots/PYSEC-2023-134.json",
+      "cve_id": "CVE-2023-39508",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-136",
+      "file": "data/snapshots/PYSEC-2023-136.json",
+      "cve_id": "CVE-2023-39553",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-152",
+      "file": "data/snapshots/PYSEC-2023-152.json",
+      "cve_id": "CVE-2023-37379",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-156",
+      "file": "data/snapshots/PYSEC-2023-156.json",
+      "cve_id": "CVE-2023-40195",
+      "package": "apache-airflow-providers-apache-spark"
+    },
+    {
+      "osv_id": "PYSEC-2023-158",
+      "file": "data/snapshots/PYSEC-2023-158.json",
+      "cve_id": "CVE-2023-40273",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-170",
+      "file": "data/snapshots/PYSEC-2023-170.json",
+      "cve_id": "CVE-2023-40611",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-171",
+      "file": "data/snapshots/PYSEC-2023-171.json",
+      "cve_id": "CVE-2023-40712",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-197",
+      "file": "data/snapshots/PYSEC-2023-197.json",
+      "cve_id": "CVE-2023-42663",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-2",
+      "file": "data/snapshots/PYSEC-2023-2.json",
+      "cve_id": "CVE-2023-25695",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-202",
+      "file": "data/snapshots/PYSEC-2023-202.json",
+      "cve_id": "CVE-2023-42780",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-203",
+      "file": "data/snapshots/PYSEC-2023-203.json",
+      "cve_id": "CVE-2023-42792",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-204",
+      "file": "data/snapshots/PYSEC-2023-204.json",
+      "cve_id": "CVE-2023-45348",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-218",
+      "file": "data/snapshots/PYSEC-2023-218.json",
+      "cve_id": "CVE-2023-46288",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-231",
+      "file": "data/snapshots/PYSEC-2023-231.json",
+      "cve_id": "CVE-2023-42781",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-232",
+      "file": "data/snapshots/PYSEC-2023-232.json",
+      "cve_id": "CVE-2023-47037",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-246",
+      "file": "data/snapshots/PYSEC-2023-246.json",
+      "cve_id": "CVE-2023-47627",
+      "package": "aiohttp"
+    },
+    {
+      "osv_id": "PYSEC-2023-247",
+      "file": "data/snapshots/PYSEC-2023-247.json",
+      "cve_id": "CVE-2023-47641",
+      "package": "aiohttp"
+    },
+    {
+      "osv_id": "PYSEC-2023-250",
+      "file": "data/snapshots/PYSEC-2023-250.json",
+      "cve_id": "CVE-2023-49081",
+      "package": "aiohttp"
+    },
+    {
+      "osv_id": "PYSEC-2023-251",
+      "file": "data/snapshots/PYSEC-2023-251.json",
+      "cve_id": "CVE-2023-49082",
+      "package": "aiohttp"
+    },
+    {
+      "osv_id": "PYSEC-2023-263",
+      "file": "data/snapshots/PYSEC-2023-263.json",
+      "cve_id": null,
+      "package": "admesh"
+    },
+    {
+      "osv_id": "PYSEC-2023-264",
+      "file": "data/snapshots/PYSEC-2023-264.json",
+      "cve_id": "CVE-2023-47265",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-265",
+      "file": "data/snapshots/PYSEC-2023-265.json",
+      "cve_id": "CVE-2023-48291",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-266",
+      "file": "data/snapshots/PYSEC-2023-266.json",
+      "cve_id": "CVE-2023-49920",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-267",
+      "file": "data/snapshots/PYSEC-2023-267.json",
+      "cve_id": "CVE-2023-50783",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-268",
+      "file": "data/snapshots/PYSEC-2023-268.json",
+      "cve_id": "CVE-2023-48796",
+      "package": "apache-dolphinscheduler"
+    },
+    {
+      "osv_id": "PYSEC-2023-3",
+      "file": "data/snapshots/PYSEC-2023-3.json",
+      "cve_id": "CVE-2023-28707",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-4",
+      "file": "data/snapshots/PYSEC-2023-4.json",
+      "cve_id": "CVE-2022-45875",
+      "package": "apache-dolphinscheduler"
+    },
+    {
+      "osv_id": "PYSEC-2023-5",
+      "file": "data/snapshots/PYSEC-2023-5.json",
+      "cve_id": "CVE-2023-24829",
+      "package": "apache-iotdb"
+    },
+    {
+      "osv_id": "PYSEC-2023-59",
+      "file": "data/snapshots/PYSEC-2023-59.json",
+      "cve_id": "CVE-2023-25754",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-6",
+      "file": "data/snapshots/PYSEC-2023-6.json",
+      "cve_id": "CVE-2023-24830",
+      "package": "apache-iotdb"
+    },
+    {
+      "osv_id": "PYSEC-2023-60",
+      "file": "data/snapshots/PYSEC-2023-60.json",
+      "cve_id": "CVE-2023-29247",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2023-7",
+      "file": "data/snapshots/PYSEC-2023-7.json",
+      "cve_id": "CVE-2023-24831",
+      "package": "apache-iotdb"
+    },
+    {
+      "osv_id": "PYSEC-2023-8",
+      "file": "data/snapshots/PYSEC-2023-8.json",
+      "cve_id": "CVE-2023-30771",
+      "package": "apache-iotdb"
+    },
+    {
+      "osv_id": "PYSEC-2023-89",
+      "file": "data/snapshots/PYSEC-2023-89.json",
+      "cve_id": "CVE-2023-35005",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2024-13",
+      "file": "data/snapshots/PYSEC-2024-13.json",
+      "cve_id": "CVE-2023-50943",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2024-14",
+      "file": "data/snapshots/PYSEC-2024-14.json",
+      "cve_id": "CVE-2023-50944",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2024-152",
+      "file": "data/snapshots/PYSEC-2024-152.json",
+      "cve_id": null,
+      "package": "aiocpa"
+    },
+    {
+      "osv_id": "PYSEC-2024-181",
+      "file": "data/snapshots/PYSEC-2024-181.json",
+      "cve_id": "CVE-2024-41937",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2024-182",
+      "file": "data/snapshots/PYSEC-2024-182.json",
+      "cve_id": "CVE-2024-45784",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2024-189",
+      "file": "data/snapshots/PYSEC-2024-189.json",
+      "cve_id": "CVE-2024-39863",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2024-190",
+      "file": "data/snapshots/PYSEC-2024-190.json",
+      "cve_id": "CVE-2024-39877",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2024-195",
+      "file": "data/snapshots/PYSEC-2024-195.json",
+      "cve_id": "CVE-2024-25142",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2024-212",
+      "file": "data/snapshots/PYSEC-2024-212.json",
+      "cve_id": "CVE-2024-45034",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2024-221",
+      "file": "data/snapshots/PYSEC-2024-221.json",
+      "cve_id": "CVE-2024-27305",
+      "package": "aiosmtpd"
+    },
+    {
+      "osv_id": "PYSEC-2024-24",
+      "file": "data/snapshots/PYSEC-2024-24.json",
+      "cve_id": "CVE-2024-23334",
+      "package": "aiohttp"
+    },
+    {
+      "osv_id": "PYSEC-2024-245",
+      "file": "data/snapshots/PYSEC-2024-245.json",
+      "cve_id": "CVE-2024-27906",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2024-26",
+      "file": "data/snapshots/PYSEC-2024-26.json",
+      "cve_id": "CVE-2024-23829",
+      "package": "aiohttp"
+    },
+    {
+      "osv_id": "PYSEC-2024-36",
+      "file": "data/snapshots/PYSEC-2024-36.json",
+      "cve_id": "CVE-2024-0690",
+      "package": "ansible-core"
+    },
+    {
+      "osv_id": "PYSEC-2024-42",
+      "file": "data/snapshots/PYSEC-2024-42.json",
+      "cve_id": "CVE-2024-26280",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2024-46",
+      "file": "data/snapshots/PYSEC-2024-46.json",
+      "cve_id": "CVE-2024-28746",
+      "package": "apache-airflow"
+    },
+    {
+      "osv_id": "PYSEC-2025-51",
+      "file": "data/snapshots/PYSEC-2025-51.json",
+      "cve_id": "CVE-2025-50213",
+      "package": "apache-airflow-providers-snowflake"
+    }
+  ]
+}

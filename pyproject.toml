@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openenv-vulnops"
+version = "0.1.0"
+description = "Deterministic OpenEnv benchmark for open-source vulnerability operations"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openenv-core[core]>=0.2.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+train = [
+    "peft>=0.14.0",
+]
+
+[project.scripts]
+server = "vulnops.server.app:main"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["vulnops", "vulnops.server"]
+package-dir = { "vulnops" = ".", "vulnops.server" = "server" }

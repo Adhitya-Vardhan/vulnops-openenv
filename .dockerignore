@@ -1,0 +1,33 @@
+# --- .dockerignore for VulnOps ---
+# Avoid copying source control and temp files
+.git/
+.github/
+.vscode/
+.DS_Store
+
+# Avoid copying project-local environments or caches
+.venv/
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# Avoid copying large artifact directories
+artifacts/
+logs/
+.gemini/
+
+# Avoid copying build artifacts
+dist/
+build/
+*.egg-info/
+
+# Ignore documentation/markdown files not needed for runtime (except README)
+problem-statement.md
+project-ideas-final.md
+implementation-plan.md
+HANDOFF_NEXT_STEPS.md
+training_utils.py  # User requested only "required" parts; training is separate.
+client.py          # Environment logic is the core, client is for testing.
+tests/             # Tests are for CI, not the production container.
+scripts/           # Original scraping scripts are no longer needed for the benchmark.
+uv.lock            # Builder uses it, but no need to copy into the final image if not used.
