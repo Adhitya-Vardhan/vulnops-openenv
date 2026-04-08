@@ -253,43 +253,75 @@ def run_remote_episode(base_url: str, task_id: str, policy: str, model_name: str
     print(f"[START] task={task_id}", flush=True)
     llm_client = get_openai_client() if policy == "openai" else None
     env = GenericEnvClient(base_url=base_url).sync()
+    MAX_REMOTE_STEPS = 20
     with env:
         response = env.reset(task_id=task_id)
         observation = response.observation
         done = response.done
         step_num: int = 1
-        while not done:
-            action_payload = (
-                llm_policy(llm_client, model_name, observation)
-                if llm_client
-                else heuristic_policy(observation)
-            )
-            response = env.step(action_payload)
-            observation = response.observation
-            done = response.done
+        last_action_str: str = ""
+        repeat_count: int = 0
+
+        while not done and step_num <= MAX_REMOTE_STEPS:
+            # Get action from LLM or heuristic with error handling
+            try:
+                if llm_client:
+                    action_payload = llm_policy(llm_client, model_name, observation)
+                    action_payload = sanitize_action_payload(action_payload)
+                else:
+                    action_payload = heuristic_policy(observation)
+            except Exception as exc:
+                print(f"  [warn] policy error ({exc}), falling back to read_report", flush=True)
+                action_payload = {"action_type": "read_report", "rationale": "fallback: policy error"}
+
+            # Loop guard: detect repeated identical actions
+            action_str = json.dumps(action_payload, sort_keys=True)
+            if action_str == last_action_str:
+                repeat_count += 1
+                if repeat_count >= 3:
+                    print(f"  [warn] repeated action 3x — forcing submit_triage", flush=True)
+                    action_payload = {"action_type": "submit_triage", "rationale": "loop guard"}
+            else:
+                repeat_count = 0
+            last_action_str = action_str
+
+            # Step the environment with error handling
+            try:
+                response = env.step(action_payload)
+                observation = response.observation
+                done = response.done
+            except Exception as exc:
+                print(f"  [warn] env.step failed ({exc}), forcing submit", flush=True)
+                action_payload = {"action_type": "submit_triage", "rationale": "env error recovery"}
+                try:
+                    response = env.step(action_payload)
+                    observation = response.observation
+                    done = response.done
+                except Exception:
+                    done = True
+
             step_reward = float(getattr(response, 'reward', None) or 0.0)
             print(f"[STEP] step={step_num} action={action_payload.get('action_type')} reward={step_reward}", flush=True)
             step_num += 1
 
-    final_score = float(observation.get("final_score") or observation.get("score_breakdown", {}).get("total", 0.0))
+    # Safely extract final score
+    final_score = 0.0
+    try:
+        final_score = float(observation.get("final_score") or observation.get("score_breakdown", {}).get("total", 0.0))
+    except Exception:
+        pass
     print(f"[END] task={task_id} score={final_score} steps={step_num}", flush=True)
 
-    final_score = float(observation.get("final_score") or 0.0)
+    # Build result safely
+    sb = observation.get("score_breakdown", {})
     return {
         "task_id": task_id,
         "final_score": final_score,
-        "validity": observation["score_breakdown"]["validity"],
-        "package_versions": round(
-            (
-                observation["score_breakdown"]["affected_package"]
-                + observation["score_breakdown"]["affected_versions"]
-            )
-            / 2,
-            4,
-        ),
-        "severity": observation["score_breakdown"]["severity"],
-        "exploitability": observation["score_breakdown"]["exploitability"],
-        "next_action": observation["score_breakdown"]["next_action"],
+        "validity": sb.get("validity", 0.0),
+        "package_versions": round((sb.get("affected_package", 0.0) + sb.get("affected_versions", 0.0)) / 2, 4),
+        "severity": sb.get("severity", 0.0),
+        "exploitability": sb.get("exploitability", 0.0),
+        "next_action": sb.get("next_action", 0.0),
     }
 
 
