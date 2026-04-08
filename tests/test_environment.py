@@ -25,7 +25,17 @@ def test_easy_task_can_be_solved_deterministically():
     env.step(VulnTriageAction(action_type="set_next_action", value="patch"))
     result = env.step(VulnTriageAction(action_type="submit_triage"))
     assert result.done is True
-    assert result.final_score == 1.0
+    assert result.final_score == 0.9999
+    assert result.score_breakdown["total"] == 0.9999
+
+
+def test_terminal_submission_score_never_hits_zero():
+    env = VulnTriageEnvironment()
+    env.reset(task_id="task_easy_guarddog")
+    result = env.step(VulnTriageAction(action_type="submit_triage"))
+    assert result.done is True
+    assert result.final_score == 0.0001
+    assert result.score_breakdown["total"] == 0.0001
 
 
 def test_medium_task_uses_real_provider_backed_truth():

@@ -23,6 +23,8 @@ WEIGHTS: Dict[str, float] = {
     "missing_information": 0.10,
 }
 
+TERMINAL_SCORE_EPSILON = 0.0001
+
 
 def normalize_text(value: str) -> str:
     return " ".join(value.strip().lower().split())
@@ -76,6 +78,16 @@ def version_range_match(actual: str, expected: str) -> float:
         if _normalize_version_range(actual) == _normalize_version_range(expected)
         else 0.0
     )
+
+
+def normalize_terminal_score(score: float) -> float:
+    """Clamp terminal task scores into the validator's required open interval."""
+    rounded = round(min(max(float(score), 0.0), 1.0), 4)
+    if rounded <= 0.0:
+        return TERMINAL_SCORE_EPSILON
+    if rounded >= 1.0:
+        return round(1.0 - TERMINAL_SCORE_EPSILON, 4)
+    return rounded
 
 
 def grade_case(case: CaseDefinition, draft: TriageDraft) -> Dict[str, float]:

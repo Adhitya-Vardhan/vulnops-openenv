@@ -11,11 +11,11 @@ from openenv.core.env_server.interfaces import Environment
 try:
     from ..models import EvidenceItem, TriageDraft, VulnTriageAction, VulnTriageObservation, VulnTriageState
     from .cases import CASE_DEFINITIONS, SEEDS, TASK_ORDER, CaseDefinition, choose_balanced_task_id, get_case_definition
-    from .graders import grade_case, normalize_text
+    from .graders import grade_case, normalize_terminal_score, normalize_text
 except ImportError:
     from models import EvidenceItem, TriageDraft, VulnTriageAction, VulnTriageObservation, VulnTriageState
     from server.cases import CASE_DEFINITIONS, SEEDS, TASK_ORDER, CaseDefinition, choose_balanced_task_id, get_case_definition
-    from server.graders import grade_case, normalize_text
+    from server.graders import grade_case, normalize_terminal_score, normalize_text
 
 
 FIELD_TO_ATTR = {
@@ -138,14 +138,17 @@ class VulnTriageEnvironment(Environment):
         self._sync_state()
 
         if self._state.steps_remaining == 0:
-            timeout_penalty = max(self._score_breakdown["total"] - 0.1, 0.0)
+            timeout_penalty = normalize_terminal_score(
+                max(self._score_breakdown["total"] - 0.1, 0.0)
+            )
             self._submitted = True
             self._state.submitted = True
-            self._state.final_score = round(timeout_penalty, 4)
+            self._score_breakdown = {**self._score_breakdown, "total": timeout_penalty}
+            self._state.final_score = timeout_penalty
             return self._observation(
-                reward=round(timeout_penalty, 4),
+                reward=timeout_penalty,
                 done=True,
-                final_score=round(timeout_penalty, 4),
+                final_score=timeout_penalty,
                 metadata={"termination_reason": "step_budget_exhausted"},
             )
 
@@ -253,6 +256,7 @@ class VulnTriageEnvironment(Environment):
         final_score = breakdown["total"]
         if len(self._revealed_evidence_ids) < max(2, len(self._case.truth.supporting_evidence_ids) // 2):
             final_score = max(0.0, round(final_score - 0.1, 4))
+        final_score = normalize_terminal_score(final_score)
 
         self._action_history.append("submit_triage")
         self._score_breakdown = {**breakdown, "total": final_score}
